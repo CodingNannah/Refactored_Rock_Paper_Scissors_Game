@@ -6,6 +6,7 @@ if (playGame) {
     //intro - name of player
     let playerName = prompt("Enter your name here:");
     let namedPlayer = playerName.trim();
+    let capsPlayer = namedPlayer.toUpperCase()
     if (playerName) {
         alert(`Welcome, ${namedPlayer}!`);
     } else {
@@ -25,17 +26,17 @@ if (playGame) {
             : computerChoice === 2 ? "paper"
             : "scissors";
             
-                //win logic
+            //win logic
             let result = 
             player === computer 
-            ? `It's a tie! \n ${namedPlayer}: ${player} & Computer: ${computer}`
+            ? `${namedPlayer}: ${player} \nComputer: ${computer} \nIt's a TIE!`
             : player === "rock" && computer === "paper" 
-            ? `Computer wins! \n ${namedPlayer}: ${player} vs. Computer: ${computer}`
+            ? `${namedPlayer}: ${player} \nComputer: ${computer} \nCOMPUTER WINS!`
             : player === "paper" && computer === "scissors" 
-            ? `Computer wins! \n ${namedPlayer}: ${player} vs. Computer: ${computer}!`
+            ? `${namedPlayer}: ${player} \nComputer: ${computer} \nCOMPUTER WINS!`
             : player === "scissors" && computer === "rock" 
-            ? `Computer wins! \n ${namedPlayer}: ${player} vs. Computer: ${computer}!`
-            : `${namedPlayer} wins! \n ${namedPlayer}: ${player} vs. Computer: ${computer}!`;
+            ? `${namedPlayer}: ${player} \nComputer: ${computer} \nCOMPUTER WINS!`
+            : `${namedPlayer}: ${player} \nComputer: ${computer} \n${capsPlayer} WINS!`;
         alert(result);
 
         //play again option
