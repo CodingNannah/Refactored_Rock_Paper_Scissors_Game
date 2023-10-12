@@ -14,6 +14,8 @@ I borrowed the ternary operator conditionals code and more from My First Interac
 
 Problem-solving: I learned to github a new origin repository without deleting anything here: https://devconnected.com/how-to-change-git-remote-origin/
 
+This tutorial was an overview of different scripts to overhaul our code. First, I copied each of the version's code into 3 files, labeled script1.js, etc. Then, I tested each of them by changing the script location on the html. I decided what I liked from each, modified it into my own code, and created this refactored Rock, Paper, Scissors Game.
+
 Problem unsolved: 
 
 Feedback changes: 
@@ -22,7 +24,13 @@ Future adjustments from Feedback: I am looking into learning how to add SweetAle
 ____________________________________
 Credit & Gratitude:
 
-Find Dave's JS Tutorial here:
+Script 1: https://gist.github.com/gitdagray/38322a7141f4236e050086e7053febb7
+
+Script 2: https://gist.github.com/gitdagray/a709dba6c46fcd2b239a8a5679af4e0e
+
+Script 3: https://gist.github.com/gitdagray/c33ef93ba4c18aa3d123c26be23d539a
+
+Find Dave's JS Tutorials here:
 https://www.youtube.com/playlist?list=PL0Zuz27SZ-6Oi6xNtL_fwCrwpuqylMsgT
 
 Thank you, Dave! 
