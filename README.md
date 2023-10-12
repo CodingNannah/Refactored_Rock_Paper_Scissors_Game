@@ -12,7 +12,7 @@ Game Creation Notes:
 
 I borrowed the ternary operator conditionals code and more from My First Interactive JS Rock, Paper, Scissors Game. Following the tutorial, I added arrays to it.
 
-Problem-solving: There are so many changes in the Tutorial. I didn't realize how much we covered since lesson 11 through the current lesson. So, I've decided to keep the version without arrays and github a new repository for this new version with arrays. I learned how to change the origin for this version here: https://devconnected.com/how-to-change-git-remote-origin/
+Problem-solving: I learned to github a new origin repository without deleting anything here: https://devconnected.com/how-to-change-git-remote-origin/
 
 Problem unsolved: 
 
