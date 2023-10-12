@@ -1,4 +1,4 @@
-This is a User vs. Computer "Rock, Paper, Scissors" game, which I created after practicing Dave Gray's JS Tutorial for Beginners #1 through #11.
+This is a User vs. Computer "Rock, Paper, Scissors" game, which I created after practicing Dave Gray's JS Tutorial for Beginners #1 through #15.
 ___________________________________
 To Run This Game in Windows:
 1. Download these files and open them in VSC with the Live Server extension
@@ -10,17 +10,15 @@ To Run This Game in Windows:
 ____________________________________
 Game Creation Notes:
 
-I followed the tutorial and borrowed code from My Third JS Rock, Paper, Scissors Game. As such, this version uses Ternary Operator conditionals.
+I borrowed the ternary operator conditionals code and more from My First Interactive JS Rock, Paper, Scissors Game. Following the tutorial, I added arrays to it.
 
-I added the User Input for a Name and called the Player by it throughout. 
+Problem-solving:
 
-Problem-solving: I had to move some variables to make certain they were initiating in the right places for the game to function properly. I finally noticed that the variable "name" was deprecated and adjusted accordingly.
+Problem unsolved: 
 
-Problem unsolved: I don't like asking the player TWICE to play again and force the input of their name AGAIN. location.reload() is boolean, and reload's the entire page/game. I went down a rabbit hole of options. It seems I need a GET method and function. I see why Dave skipped this for beginners.
+Feedback changes: 
 
-Feedback changes: I adjust the result to reflect a row for the Player, one for the Computer, and the last for who won.
-
-Future adjustments from Feedback: I am looking into learning how to add SweetAlert (https://sweetalert2.github.io/) to create pop-up boxes with style and larger text.
+Future adjustments from Feedback: I am looking into learning how to add SweetAlert (https://sweetalert2.github.io/) to create pop-up boxes with style and larger text. I may use an overlay method as in the JS Tic Tac Toe project I completed with Web Dev Simplified's Tutorial.
 ____________________________________
 Credit & Gratitude:
 
