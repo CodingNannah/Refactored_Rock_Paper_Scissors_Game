@@ -25,13 +25,20 @@ const playGame = () => {
         // FUTURE: Create 3rd option for a repeated No Name: go to changedMind & exit.
 
         // Player Goes First - playerChoice
-        let playerChoice = getPlayerChoice();
-        playerChoice = trimPlayerChoice(playerChoice);
-
-        // Player's input
-        if (playerChoice === "") {
-            
+        let playerChoice = inputChoice();
+        
+        // Player's OOps! input
+        if (playerChoice === "" || !playerChoice) {
+            invalidChoice();
+            continue;
+        } else {
+            trimPlayerChoice(playerChoice);
         }
+
+        // Player's valid input - continue game play
+        playerChoice = evaluatePlayerChoice(playerChoiceTrimmed);
+
+        
             
 
         
@@ -87,19 +94,28 @@ const playGame = () => {
         enterNameAgain = getPlayerName;
     }
 
-    const getPlayerChoice = () => {
+    const inputChoice = () => {
         return prompt(`${namedPlayer}, enter rock, paper, or scissors.`);
     }
 
     const trimPlayerChoice = (playerChoice) => {
         if (playerChoice === "") {
-            return playerChoice.trim().toLowerCase();     
-        } else {
-            return false;
+            playerChoiceTrimmed = playerChoice.trim().toLowerCase();     
+            return playerChoiceTrimmed;
         }};
-    
 
-    // if (player === "rock" || player === "paper" || player === "scissors") {    
-    
+    const invalidChoice = () => {
+        alert (`Try that again, ${namedPlayer}.`);
+        inputChoice();
+    };
 
-initGame();
+    const evaluatePlayerChoice = (playerChoiceTrimmed) => {
+        playerChoice = playerChoiceTrimmed;
+        if (playerChoice === "rock" || playerChoice === "paper" || playerChoice === "scissors"){   
+        return playerChoice;
+        } else {
+        invalidChoice();
+    }};
+
+
+// initGame();
